@@ -8,10 +8,15 @@ public class prime {
        Scanner sc= new Scanner(System.in);
         int L=sc.nextInt();
         int R=sc.nextInt();
+        boolean found=false;
         for(int i=L;i<=R;i++){
             if(ischeck(i)){
+                found=true;
                 System.out.print(i+" ");
             }
+        }
+        if(!found){
+            System.out.print("NONE");
         }
     }
     public static boolean ischeck(int n){
